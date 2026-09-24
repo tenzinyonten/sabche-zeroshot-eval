@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+data/raw_opf/
+runs/
+.env
+.DS_Store
