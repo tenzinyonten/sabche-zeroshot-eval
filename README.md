@@ -52,6 +52,7 @@ The mmBERT model is `Yontenn/mmbert-sabche-v1` on Hugging Face. If the page give
 
 - `data/`: gold spans as offsets (`sabche_gold_v2.csv`, 42,292 spans over 323 books), each book's split and batch (`books_manifest.csv`, 261 train, 33 validation, 29 test), and the 10 books left out for being under-annotated (`excluded_books.csv`).
 - `results/`: predicted spans for both models, plus Gemini's per-book scores and mmBERT's own evaluation file.
+- `pipeline/`: the scripts that built the gold, the split and the tokenized dataset, with a README on each step. Reference only, since they need the working repo's tsawa code.
 - `prompts/` and `src/`: the Gemini prompt, the window cutter and the anchor locator, which are copied unchanged from the quotation benchmark.
 
 Book texts, tokenized data and raw model replies are not included. The texts belong to the OpenPecha repositories, and the fetch script notes that data-rights questions there are still open, so check their terms before sharing any text.
